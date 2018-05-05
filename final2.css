@@ -2,6 +2,15 @@
   margin: 0%;
   font-family: Roboto, sans-serif;
 }
+
+::selection {
+  color: #9d8957;
+}
+
+::-moz-selection {
+  color: #9d8957;
+}
+
 html,
 body,
 .Main-Container,
@@ -22,7 +31,13 @@ button {
   font-weight: inherit;
   font-style: inherit;
   font-family: inherit;
+  text-shadow: 2px 2px 4px #000000;
 }
+
+button:hover {
+  color: white;
+}
+
 img {
   object-fit: contain;
   height: 100%;
@@ -47,6 +62,9 @@ img {
   padding: 10px;
   display: table;
   margin: 0 auto;
+
+  text-shadow: 2px 2px 4px #000000;
+  letter-spacing: 0.2em;
 }
 
 .Nav-Container li{
@@ -88,13 +106,17 @@ img {
   letter-spacing: 1em;
   transform: translate(-50%, -50%);
   color: white;
+
+  text-shadow: 2px 2px 4px #000000;
 }
 
 #btnHero {
-  background-color: rgba(147, 112, 219, 0.8);
+  background-color: rgba(157, 137, 87, 0.4);
   border-radius: 20px;
   border: 3px solid white;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.3em;
+
+  font-weight: bold;
 }
 /*Parallax*/
 .Info-Container {
@@ -114,10 +136,6 @@ img {
   word-break: keep-all;
   max-width: 1000px;
 
-  /* position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
 }
 
 .Parallax-Image {
@@ -126,8 +144,6 @@ img {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  /* width: inherit;
-  height: inherit; */
 
   min-height: 500px;
 }
@@ -135,6 +151,10 @@ img {
 .Parallax-Text {
   font-size: 3em;
   margin: 5% 0;
+}
+
+.gold-font {
+  color: #9d8957;
 }
 
 .full{
@@ -249,14 +269,6 @@ img {
   width: 100%;
   text-align: center;
 }
-
-/* .slideNum {
-  color: black;
-  font-size: 1.2em;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-} */
 
 .slideTxtUnder{
   font-size: 6em;
