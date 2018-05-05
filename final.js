@@ -12,7 +12,7 @@ var slideTxtUnderArray = ["North America - NA LCS","Europe - EU LCS","China - LP
                           "JAPAN - LJL", "LATIN AMERICA NORTH - LLN", "OCEANIA - OPL", "TURKEY - TCL", "Vietnam - VCS"];
 var slideTeamName = document.querySelector(".slideTeamName");
 var slideTeamNameArray = ["TEAM LIQUID", "FNATIC", "ROYAL NEVER GIVE UP", "KING-ZONE DRAGON X", "FLASH WOLVES", "KABUM! E-SPORTS",
-                          "KAOS LATIN GAMERS", "ASCENSION GAMING", "GAMBIT GAMING", "PENTAGRAM", "RAINBOW7", "DIRE WOLVES", "BAUSUPERMASSIVE ESPORTS", "EVOS ESPORTS"];
+                          "KAOS LATIN GAMERS", "ASCENSION GAMING", "GAMBIT GAMING", "PENTAGRAM", "RAINBOW7", "DIRE WOLVES", "BAUSUPERMASSIVE", "EVOS ESPORTS"];
 
 var btnHero = document.querySelector("#btnHero");
 var video = document.querySelector("#myVideo");
