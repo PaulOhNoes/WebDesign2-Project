@@ -343,3 +343,61 @@ img {
 #btnScrollTop:hover {
   background-color: rgba(147, 112, 219, 0.5);
 }
+
+@media only screen and (max-width: 1400px) {
+  .textBox {
+    font-size: 1em;
+  }
+  .imageBox img {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .ImageText-Container {
+    height: 300%;
+  }
+
+  .row:nth-child(1){
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+
+  .textBox {
+    width: 100%;
+    height: 50%;
+  }
+
+  .imageBox {
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .imageBox img{
+    position: relative;
+    top: 0;
+    left: 50%;
+    height: 100;
+    margin: 0 auto;
+    padding: 0 auto;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .ImageText-Container {
+    color: green;
+  }
+
+  .textBox div {
+    top: 50%;
+  }
+}
