@@ -14,7 +14,6 @@ var slideTeamName = document.querySelector(".slideTeamName");
 var slideTeamNameArray = ["TEAM LIQUID", "FNATIC", "ROYAL NEVER GIVE UP", "KING-ZONE DRAGON X", "FLASH WOLVES", "KABUM! E-SPORTS",
                           "KAOS LATIN GAMERS", "ASCENSION GAMING", "GAMBIT GAMING", "PENTAGRAM", "RAINBOW7", "DIRE WOLVES", "BAUSUPERMASSIVE", "EVOS ESPORTS"];
 
-var btnHero = document.querySelector("#btnHero");
 var video = document.querySelector("#myVideo");
 var hero = document.querySelector(".Hero-Content");
 
@@ -42,7 +41,6 @@ window.addEventListener("click", function(event){
   }
 })
 
-btnHero.addEventListener("click", videoFunctions);
 btnScrollTop.addEventListener("click", scrollTop);
 
 for(var i = 0; i < btnNextSlide.length; i++){
@@ -91,16 +89,16 @@ function hideSlides(slideNum){
 
 }
 
-function videoFunctions(){
-  if(video.paused) {
-    video.play()
-    hero.style.display = "none";
-  }
-  else {
-    video.pause();
-  }
-  video.setAttribute("controls", "1");
-}
+// function videoFunctions(){
+//   if(video.paused) {
+//     video.play()
+//     hero.style.display = "none";
+//   }
+//   else {
+//     video.pause();
+//   }
+//   video.setAttribute("controls", "1");
+// }
 window.onscroll = function() {
   navBarScroll()
   scrollAppear()
@@ -128,7 +126,7 @@ function navBarScroll() {
         navContainer.style.fontSize = "1.4em";
     } else {
         navContainer.style.backgroundColor = "rgba(0, 0, 0, 0.25)";
-        navContainer.style.fontSize = "2em";
+        navContainer.style.fontSize = "2vw";
     }
 }
 
