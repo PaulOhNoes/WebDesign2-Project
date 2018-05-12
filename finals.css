@@ -346,17 +346,22 @@ body,
   background-color: rgba(147, 112, 219, 0.5);
 }
 
-@media only screen and (max-width: 800px) {
+/* Portrait and Landscape */
+@media only screen
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
 
 .ImageText-Container {
 }
 
 .row{
   flex-direction: column;
+  -webkit-flex-direction: column;
 }
 
 .row:nth-child(1){
-      flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-flex-direction: column-reverse;
 }
 
 .row, .textBox, .imageBox {
@@ -365,4 +370,8 @@ body,
 
 .textBox, .Info-Container {
   font-size: 4vw;
+}
+
+.Parallax-Image {
+  display: none;
 }
